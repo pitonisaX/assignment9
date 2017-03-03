@@ -7,8 +7,6 @@ services:
     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} 
     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} 
     - CONFIG_BUCKET=${CONFIG_BUCKET}
-
-CONFIG_BUCKET
     build: .
     image: "${DOCKER_REPO}/${DOCKER_IMAGE}"
     command: /code/docker-entrypoint.sh
